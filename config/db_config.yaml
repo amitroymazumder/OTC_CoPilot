@@ -1,0 +1,11 @@
+# MS SQL Database Configuration
+driver: "ODBC Driver 17 for SQL Server"
+server: "your-sql-server.company.com"
+port: 1433
+database: "OTC_Trade_Confirmation"
+username: "readonly_user"
+password: "readonly_password"
+
+# Safety
+readonly: true
+timeout: 30
