@@ -7,7 +7,7 @@ Weaviate (enterprise, integrates with your in-house LLM).
 Graph RAG (Neo4j, for schema-aware reasoning).
 
 📂 Project Structure
-
+```
 otc-ops-copilot/
 │
 ├── app/                          # Streamlit frontend
@@ -61,3 +61,6 @@ otc-ops-copilot/
 ├── requirements.txt
 ├── README.md
 └── run.py                        # Launch backend + UI
+```
+
+
