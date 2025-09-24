@@ -1,0 +1,7 @@
+# ChromaDB Configuration
+persist_directory: "./chroma_store"
+collection_name: "otc_copilot"
+embedding_model: "./models/all-MiniLM-L6-v2"
+
+# Query settings
+top_k: 5
