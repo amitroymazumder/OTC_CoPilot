@@ -1,3 +1,6 @@
+create a **`loaders/README.md`** that explains everything about the loaders and the unified training script.
+This will serve as documentation for your team so they know exactly how to use and extend these files.
+
 ---
 
 # 📂 `loaders/` – Knowledge Loaders for OTC Ops Copilot
@@ -154,3 +157,5 @@ print(graph_retriever.query("Which tables relate trades and counterparties?", to
 * **`train_loader.py`** → one script to sync all 3 backends.
 
 ---
+
+
