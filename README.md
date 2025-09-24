@@ -1,4 +1,22 @@
 # OTC_CoPilot
+
+# OTC Ops Copilot 🚀
+
+An AI-powered assistant for **OTC Trade Confirmation** ops teams.  
+Transforms **natural language → SQL → reports → dashboards**.  
+
+---
+
+## 📌 Features
+- Natural Language → SQL → MS SQL results.  
+- Visualizations with **Plotly**.  
+- Report scheduling + notifications (PDF, Excel, Email, Slack).  
+- Flexible backends: **ChromaDB**, **Weaviate**, **GraphDB**.  
+- Knowledge layer with schema, master data, business rules.  
+
+---
+
+## 📂 Project Structure
 OTC_CoPilot
 
 full OTC Ops Copilot project skeleton that supports all 3 backends:
@@ -63,4 +81,11 @@ otc-ops-copilot/
 └── run.py                        # Launch backend + UI
 ```
 
-
+---
+'''
+## ⚙️ Setup
+1. Clone repo:  
+   ```bash
+   git clone https://github.com/your-org/otc-ops-copilot.git
+   cd otc-ops-copilot
+'''
