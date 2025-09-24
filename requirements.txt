@@ -1,0 +1,10 @@
+streamlit
+plotly
+pyodbc
+chromadb
+weaviate-client
+neo4j
+pyyaml
+sentence-transformers
+apscheduler
+weasyprint
