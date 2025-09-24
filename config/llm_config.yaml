@@ -1,0 +1,23 @@
+# LLM Configuration
+provider: "weaviate"   # options: chroma, weaviate, graph
+
+# In-house LLM API (via Weaviate integration)
+weaviate:
+  host: "http://weaviate.company.com"
+  api_key: "YOUR_API_KEY"
+  class_name: "OTCKnowledge"
+  top_k: 5
+
+# Local ChromaDB fallback
+chroma:
+  persist_directory: "./chroma_store"
+  collection_name: "otc_copilot"
+  embedding_model: "./models/all-MiniLM-L6-v2"
+  top_k: 5
+
+# GraphDB (Neo4j) for schema reasoning
+graph:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password"
+  database: "neo4j"
