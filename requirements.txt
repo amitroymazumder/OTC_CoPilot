@@ -1,10 +1,23 @@
+# Core
+pandas
+numpy
+pyodbc
+SQLAlchemy
+
+# Streamlit UI
 streamlit
 plotly
-pyodbc
+
+# LLM / Retrieval
 chromadb
 weaviate-client
 neo4j
-pyyaml
 sentence-transformers
+
+# Scheduling & Reports
 apscheduler
 weasyprint
+openpyxl   # for Excel reports
+
+# Testing
+pytest
