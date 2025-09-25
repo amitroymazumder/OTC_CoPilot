@@ -1,5 +1,3 @@
-# OTC_CoPilot
-
 # OTC Ops Copilot 🚀
 
 An AI-powered assistant for **OTC Trade Confirmation** ops teams.  
@@ -15,15 +13,6 @@ Transforms **natural language → SQL → reports → dashboards**.
 - Knowledge layer with schema, master data, business rules.  
 
 ---
-
-## 📂 Project Structure
-OTC_CoPilot
-
-full OTC Ops Copilot project skeleton that supports all 3 backends:
-ChromaDB (local RAG, lightweight POC).
-Weaviate (enterprise, integrates with your in-house LLM).
-Graph RAG (Neo4j, for schema-aware reasoning).
-
 📂 Project Structure
 ```
 otc-ops-copilot/
@@ -78,14 +67,87 @@ otc-ops-copilot/
 │
 ├── requirements.txt
 ├── README.md
-└── run.py                        # Launch backend + UI
+└── run.py                        # Main entry point to start backend + UI.
+```
+```
+
+otc-ops-copilot/
+├── app/           # Streamlit UI
+├── core/          # Core NL → SQL pipeline
+├── loaders/       # Knowledge loaders (Chroma, Weaviate, GraphDB)
+├── services/      # Scheduler, reports, notifications
+├── knowledge/     # Business glossary + rules
+├── config/        # DB + LLM configs
+├── tests/         # Unit tests
+├── requirements.txt
+├── run.py
+└── README.md
+
+````
+---
+
+## ⚙️ Setup
+1. Clone repo:  
+```
+   bash
+   git clone https://github.com/your-org/otc-ops-copilot.git
+   cd otc-ops-copilot
+```
+
+2. Create virtual env + install deps:
+
+   ```
+   bash
+   python -m venv venv
+   source venv/bin/activate   # (Linux/Mac)
+   venv\Scripts\activate      # (Windows)
+   pip install -r requirements.txt
+   ```
+3. Configure DB + retriever in `config/*.yaml`.
+4. Run:
+
+   ```
+   bash
+   python run.py
+   ```
+
+---
+
+## 📊 Backends
+
+* **ChromaDB** → for local development.
+* **Weaviate** → for enterprise LLM integration.
+* **GraphDB (Neo4j)** → for schema reasoning.
+
+Switch backend in `config/llm_config.yaml`:
+
+```
+yaml
+provider: "weaviate"
 ```
 
 ---
-'''
-## ⚙️ Setup
-1. Clone repo:  
-   ```bash
-   git clone https://github.com/your-org/otc-ops-copilot.git
-   cd otc-ops-copilot
-'''
+
+## ✅ Roadmap
+
+* Add support for settlement DB.
+* Add fine-tuning with ops-provided SQL examples.
+* Add RBAC (role-based access control) for sensitive data.
+
+---
+
+## 🛡️ Safety
+
+* All DB connections are **read-only**.
+* SQL validator enforces **SELECT-only queries**.
+* Ops teams can trust no data will be modified.
+
+```
+
+---
+
+✅ With this, your **entire project structure is now complete**:
+- Each folder (`app`, `core`, `loaders`, `services`, `knowledge`, `config`, `tests`) has full code + documentation.  
+- Root-level files (`requirements.txt`, `run.py`, `README.md`) make it easy to run & onboard new users.  
+
+
