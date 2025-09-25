@@ -1,7 +1,4 @@
-Perfect request 👍 this will be a strategic document for your team to understand why OTC Copilot is not “just Vanna repackaged” but a domain-specific, enhanced solution.
-
-Here’s the OTC-vs-Vanna.md file:
-
+This will be a strategic document for your team to understand why OTC Copilot is not “just Vanna repackaged” but a domain-specific, enhanced solution.
 
 ---
 
