@@ -149,5 +149,3 @@ provider: "weaviate"
 ✅ With this, your **entire project structure is now complete**:
 - Each folder (`app`, `core`, `loaders`, `services`, `knowledge`, `config`, `tests`) has full code + documentation.  
 - Root-level files (`requirements.txt`, `run.py`, `README.md`) make it easy to run & onboard new users.  
-
-
