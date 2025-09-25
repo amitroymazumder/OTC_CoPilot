@@ -88,8 +88,8 @@ otc-ops-copilot/
 
 ## ⚙️ Setup
 1. Clone repo:  
-```
-   bash
+```bash
+   
    git clone https://github.com/your-org/otc-ops-copilot.git
    cd otc-ops-copilot
 ```
